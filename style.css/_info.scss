@@ -1,0 +1,334 @@
+.info {
+    margin-top: 120px;
+    @include border();
+
+    &__container {
+        margin-top: 48px;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-gap: 24px;
+        justify-content: space-between;
+        transition: all .3s linear;
+        padding: 0;
+    }
+}
+
+.info__title {
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    color: #000;
+}
+
+.info__card {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 306px;
+    height: 306px;
+    background: #FBFBFB;
+    border: 0.595331px solid #EAEAEA;
+    border-radius: 25px;
+    background-position: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        p {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        h1 {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .info__block {
+            flex-direction: row-reverse;
+        }
+
+        .block__icon {
+            content: url('./img/arrow\ up.svg');
+        }
+
+        .block__text {
+
+            &::before {
+                display: none;
+                content: '';
+            }
+
+            &::after {
+                content: 'Batafsil bilish';
+            }
+        }
+
+        // .card-01__text {
+        //     &::before {
+        //         display: none;
+        //         content: '';
+        //     }
+        //     &::after {
+        //         content: 'Batafsil bilish';
+        //     }
+        // }
+
+        .new__card_title {
+            max-width: 200px;
+            width: 100%;
+
+            &::after {
+                content: 'Tez kunda ushbu kursni tashkil qilamiz!';
+            }
+        }
+
+        .new__box_subtitle {
+            width: 166px;
+        }
+
+        .new__subtitle {
+
+            &::after {
+                display: none;
+                content: 'Tez kunda!';
+            }
+
+            &::before {
+                content: 'Hozircha mavjud emas';
+                color:rgba(3, 9, 4, 1);
+            }
+        }
+
+        .new__text {
+
+            &:after {
+                content: 'Talab va takliflarni o‘rganib chiqishimiz uchun biz bilan bo‘laning'
+            }
+        }
+
+        .new__block {
+            display: none;
+        }
+    }
+}
+
+.info__content {
+    width: 255px;
+    height: 243px;
+}
+
+.info__subtitle {
+    width: 91px;
+    height: 17px;
+    margin-bottom: 23.54px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #575756;
+}
+
+
+.info__card_title {
+    margin-bottom: 23.54px;
+    width: 255px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #030904;
+}
+
+.info__text {
+    width: 255px;
+    height: 60px;
+    margin-bottom: 23.54px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #575756;
+}
+
+.info__block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 158.88px;
+    height: 35.31px;
+    background-color: #a6ee42;
+    border-radius: 5.88462px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        @include focus();
+    }
+
+    .block__icon {
+        &::after {
+            content: url('./img/Vector.svg');
+        }
+    }
+
+    .block__text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21.78px;
+        color: rgba(3, 9, 4, 1);
+    }
+
+    .card-01__text {
+        &::before {
+            content: '180.000 so‘m';
+        }
+    }
+
+    .card-02__text {
+        &::before {
+            content: '220.000 so‘m';
+        }
+    }
+}
+
+.new__card_title {
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: $marginBottom;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #a7a7a7;
+
+    &::after {
+        content: 'Ingliz tili kurslari';
+    }
+}
+
+.new__card_titleI {
+    &::after {
+        content: 'Ingliz tili kurslari';
+    }
+}
+
+.new__card_titleI { // fixed this bag
+    &::after {
+        content: 'Matematika kurslari';
+    }
+}
+
+.new__text {
+    margin-bottom: $marginBottom;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #a7a7a7;
+
+    &::after {
+        content: 'Darslar, haftada 3 kun, 2 soatdan bo‘ladi.';
+    }
+}
+
+.new__block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 162px;
+    height: 36px;
+    background-color: #a7a7a7;
+    border-radius: 6.93333px;
+
+    .new__block_text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21.78px;
+        color: $colorWhite;          
+    }
+}
+
+.new__box_subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $marginBottom;
+    width: 88px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: $colorGreenLinght;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        @include focus();
+    }
+}
+
+.new__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $colorBlack;
+
+    &::after {
+        content: 'Tez kunda!';
+    }
+}
+
+.card_01 {
+    &:hover {
+        background: url('./img/Full\ cards.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.card_02 {
+    &:hover {
+        background: url('./img/Full\ cards-1.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.card_03 {
+    &:hover {
+        background: url('./img/Full\ cards-2.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.card_04 {
+    &:hover {
+        background: url('./img/Full\ cards-3.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.card_05 {
+    &:hover {
+        background: url('./img/ingliz\ tili\ hover.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.card_06 {
+    &:hover {
+        background: url('./img/Matem\ -\ Hover.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

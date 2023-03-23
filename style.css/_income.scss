@@ -1,0 +1,185 @@
+$marginB: 25px;
+
+.income__card {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 306px;
+    height: 306px;
+    background: #FBFBFB;
+    border: 0.595331px solid #EAEAEA;
+    border-radius: 25px;
+    background-position: 0 10px;
+    cursor: pointer;
+    transition: .3s;
+    // border: 1px solid #d00;
+
+    &:hover {
+        background-image: url('./img/daromad\ topadi-1.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .income__subtitle {
+            display: none;
+        }
+
+        .income__card_title {
+            width: 220px;
+            // width: 100%;
+            color: #fff;
+
+            &::after {
+                content: 'Vakansiyalar bilan tanishing';
+            }
+        }
+
+        .income__text {
+            color: #fff;
+
+            &::before {
+                content: 'IT mutaxassislarga qancha haq to‘lashini batafsil bilish uchun Mylance sahifasiga o‘tishingiz mumkin!';
+            }
+        }
+
+        .income__block {
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 171px;
+            height: 36px;
+            gap: 0;
+            background-color: #a6ee42;
+            border-radius: 5.88462px;
+
+            position: relative;
+            overflow: hidden;
+        
+            &::before {
+                content: '';
+                @include focus();
+            }
+        }
+
+        .card-05__icon {
+            margin-top: 5px;
+    
+            &::after {
+               content: url('./img/arrow\ up.svg');
+            }
+        }  
+        
+        .block__text02 {
+
+            &::before {
+                content: 'Batafsil bilish';
+            }
+        }
+    }
+}
+
+.income__content {
+    width: 255px;
+    height: 227px;
+}
+
+.income__subtitle {
+    margin-bottom: $marginB;
+    font-size: 13.73px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $colorGrey;
+}
+
+.income__card_title {
+    margin-bottom: $marginB;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $colorBlack;
+}
+
+.income__card01 {
+    &::after {
+        content: 'Grafik dizayner';
+    }
+}
+
+.income__card02 {
+    width: 220px;
+    &::after {
+        content: 'Frontend dasturchi';
+    }
+}
+
+.income__card03 {
+    width: 230px;
+    &::after {
+        content: 'Back-end dasturchi';
+    }
+}
+
+.income__card04 {
+    &::after {
+        content: 'UX/UI dizayner';
+    }
+}
+
+.income__text {
+    margin-bottom: $marginB;
+    font-weight: 400;
+    font-size: 16.67px;
+    line-height: 20px;
+    color: $colorGrey;
+
+    &::before {
+        content: 'Freelance Team vakansiyalariga ko‘ra (minimal maoshdan o‘rtacha maoshlar ko‘rsatilgan)';
+    }
+}
+
+.income__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0;
+    width: 151px;
+    height: 23px;
+
+    .card-05__icon {
+        margin-top: 5px;
+
+        &::after {
+           content: url('./img/Money\ 2.png');
+        }
+    }
+
+    .block__text02 {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 21px;
+        color: $colorBlack;
+        &::before {
+            content: '2-7 mlngacha';
+        }
+    }
+
+    .card-06__text {
+        &::before {
+            content: '3-8 mlngacha';
+        }
+    }
+    
+    .card-07__text {
+        &::before {
+            content: '3-12 mlngacha';
+        }
+    }
+
+    .card-08__text {
+        &::before {
+            content: '5-14 mlngacha';
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.primary {
+    @include border();
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.primary__content {
+    max-width: 720px;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 76.8px;
+        color: #000;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 31.2px;
+        color: $colorGrey;
+    }
+}
+
+.primary__conteiner {
+    display: flex;
+
+    .primary__picture {
+        width: 100%;
+        height: 900px;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
+    }
+}

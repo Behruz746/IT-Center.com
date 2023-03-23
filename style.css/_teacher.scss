@@ -1,0 +1,84 @@
+.teachers__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher__title {
+    margin-left: 20px;
+    margin-bottom: 48px;
+    text-align: left;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: $colorBlack;
+}
+
+.teachers__container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1512px;
+    width: 100%;
+    gap: 24px;
+    justify-content: space-between;
+
+    .teacher__card {
+        width: 306px;
+        height: 416.23px;
+        gap: 23px;
+    }
+
+    .teacher__content {
+        text-align: center;
+    }
+
+    .teacher__card_title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 30px;
+        color: #000; 
+    }
+
+    .teacher__subtitle {
+        margin-bottom: 6px;
+        font-size: 17.65px;
+        font-weight: 500;
+        line-height: 21.37px;
+        color: #000;
+    }
+
+    .teacher__text {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $colorGrey;
+    }
+}
+
+.teacher__picture {
+    width: 306px;
+    height: 306px;
+    border-radius: 153px;
+    margin-bottom: $marginBottom;
+    background: $colorGreenLinght; 
+    position: relative;
+    overflow: hidden;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: -306px;
+        width: 306px;
+        height: auto;
+        transform:  scale(0, 0);
+        transition: .3s linear;
+    }
+
+    &:hover {
+        img {
+            left: 0;
+            transform:  scale(1, 1);
+        }
+    }
+}

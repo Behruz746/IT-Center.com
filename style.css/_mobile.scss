@@ -1,0 +1,647 @@
+@media screen and (min-width: $desTop) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .about__container { 
+        gap: 24;
+    }
+
+    .about__content {
+        max-width: 1500px;
+        width: 100%;
+    }
+
+    .about__text {
+        max-width: 1200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $MacBook){
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1364px) {
+    .info__container {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+@media screen and (max-width: 1031px) {
+    .info__container {
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    .info__card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1296px) {
+    .primary__content {
+        h1 {
+            font-size: 56px;
+            line-height: 67px;
+            color: #000;
+        }
+    }
+
+    .about__title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .info__title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .teacher__title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .registrar__card_content {
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }       
+}
+
+@media screen and (max-width: 1250px) {
+    .info__card {
+        justify-self: center;
+    }
+
+    .information__cards  {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .teachers__container {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 990px) {
+    .header__menu {
+        transition: .1s linear;
+        transform: translate(-120px, 0);
+    } 
+}
+
+@media screen and (max-width: 880px) {
+    .about__container {
+        gap: 80px;
+    }
+
+    .about__images {
+        transform: translate(0px, 0px);
+    }  
+}
+
+@media screen and (max-width: 850px) {
+    .information__container {
+        flex-direction: column-reverse;
+    }
+
+    .information__card_black {
+        width: 100%;
+
+        .information__card_content {
+            max-width: 298px;
+            width: 100%;
+            height: 251.46px;
+        }
+    }
+
+    .information__cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 720px;
+        width: 100%;
+        height: 487px;
+    }
+
+    .cards__container {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+       .information__card02 {
+            margin-bottom: 56px;
+       }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section {
+        margin-top: 90px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .header__logo {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .header__img {
+        margin: 0 auto;
+    }
+
+    .menu__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__menu {
+        transition: .1s linear;
+        transform: translate(0, 0);
+    } 
+
+    .about {
+        margin-top: 120px;
+    }
+
+    .about__title {
+        font-size: 34px;
+        line-height: 41.15px;
+    }
+
+    .primary__content {
+        h1 {
+            margin-bottom: 11px;
+            font-size: 45px;
+            line-height: 54px;
+            text-align: center;
+        } 
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .about__title {
+        margin-bottom: 38px;
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    .about__images {
+        img {
+            margin-bottom: 72px;
+        }
+    }
+
+    .info__title {
+        font-size: 34px;
+        line-height: 41px;
+    }
+
+    .info__card {
+        width: 100%;
+    }
+
+    .teacher__title {
+        font-size: 34px;
+        line-height: 41px;
+    } 
+
+    #registrar__content {
+        padding: 40px 40px 50px 40px;      
+        
+        .registrar__title {
+            margin-bottom: 12px;
+            font-size: 34px;
+            line-height: 41px;
+        }
+    
+        .registrar__subtitle {
+            font-size: 17px;    
+        }
+    }
+
+    #registrar__card_content {
+        margin-top: 20px;
+        margin-bottom: 24px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .registrar__form {
+        padding: 0 60px;
+    }
+
+    .footer {
+        h1 {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .primary {
+        margin-top: 70px;
+    }
+
+    .about__container {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .about__images {
+        img {
+            margin-bottom: 0px;
+        }
+    }
+
+    .info__card {
+        width: 100%;
+        height: 306px;
+        justify-content: flex-start;
+
+        &:hover {
+            background-position: center;
+        }
+
+        .info__content {
+            padding: 0 29px;
+        }
+    }
+
+    .income__card {
+        width: 100%;
+        height: 306px;
+        justify-content: flex-start;
+
+        &:hover {
+            background-position: left;
+        }
+
+        .income__content {
+            padding: 0 29px;
+        }
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .info__container {
+        grid-template-columns: repeat(1, 2fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mobile__list {
+        margin-top: 10px;
+    }
+
+    .contact__mobile {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .about__container {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .about__images {
+        img {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #registrar__form {
+        padding: 0 10px;
+        max-width: 370px;
+        width: 100%;
+        height: 450px;
+    }
+
+    #registrar__card_content {
+        margin: 0;
+        padding: 0 5px;
+
+        .form__text {
+            margin: 0 0 10px 0;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 30px;
+            color: #000;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            color: $colorGrey;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__logo {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .contact__mobile {
+        display: block;
+    }
+
+    .mobile__list {
+        margin-top: 38px;
+    
+        li {
+            max-width: 300px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .images__container {
+        gap: 25px;
+
+        .about__img01 {
+            margin: 0 auto;
+        }
+    }
+
+   .about__img {
+        align-self: center;
+    }
+
+    .menu__conteiner {
+        max-width: 500px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .skit__conteiner {
+        h3 {
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .skit__conteiner {
+        margin-top: 10px;
+
+        h1 {
+            margin-top: 0;
+        }
+    }
+
+    .skit__content {
+        margin-top: 10px;
+    }
+
+    .contact__mobile {
+        margin-bottom: 20px;
+    }
+
+    #information__cards {
+        display: none;
+    }
+
+    .information__min {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    $height1: 55px;
+    $height: 3px;
+    $width: 30px;
+
+    .mobile__list {
+    
+        li {
+            margin-bottom: 14px;
+        }
+    }
+
+    #header {
+        height: $height1;
+    }
+
+    .header__container {
+        height: $height1;
+    }
+
+    .header__img {
+        margin: 0;
+    }
+
+    .header__logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 120px; // tuzat width ni
+        height: auto;
+    }
+
+    .primary {
+        margin-top: 20px;
+    }
+
+    .mobile__menu {
+        position: absolute;
+        top: 55px;
+        left: -900px;
+    }
+
+    .bar__active {
+        position: absolute;
+        top: 55px;
+        left: 0;
+    }
+
+    #btn__line {
+        width: $width;
+        height: $height;
+
+        &::after {
+            position: absolute;
+            top: 10px;
+            content: '';
+            width: $width;
+            height: $height;
+        }
+
+        &::before { 
+            position: absolute;
+            top: -10px;
+            content: '';
+            width: $width;
+            height: $height;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #registrar__form {
+        padding: 0 10px;
+        max-width: 320px;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 330px) {
+    .section {
+        margin-top: 119px;
+    }
+
+    .primary__content {
+        h1 {
+            margin-bottom: 11px;
+            font-size: 35px;
+            line-height: 34px;
+            text-align: center;
+        } 
+
+        p {
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+        }
+    }
+
+    .about__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .info__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .info__text {
+        margin-bottom: 41px;
+        width: 100%;
+    }
+
+    .registrar__content {
+        display: none;
+    }
+
+    .registrar__card_content {
+        h1 {
+            font-size: 17px;
+            line-height: 21px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }   
+    
+    #registrar__form {
+        padding: 0 5px;
+        max-width: 320px;
+        width: 100%;
+        height: 430px;
+    } 
+}
+
+@media screen and (max-width: 320px) {
+    #registrar__form {
+        padding: 0 5px;
+        max-width: 320px;
+        width: 100%;
+        height: 430px;
+    }   
+
+    // .teacher__card { // fixed this bag
+    //     width: 206px;
+    // }
+
+    // .teacher__picture {
+    //     max-width: 206px;
+    //     width: 100%;
+    //     height: 206px;
+    //     margin: 0 auto;
+
+    //     img {
+    //         width: 206px;
+    //         height: 206px;
+    //     }
+    // }
+}
+
+
+@media screen and (max-width: 280px) {          
+    .income__card02 {
+        width: 190px;
+    }
+    
+    .income__card03 {
+        width: 190px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .information__min {
+        padding: 20px 50px 20px 20px;
+    }    
+}
+
+@media screen and (max-width: 240px) {
+    .information__min {
+        padding: 10px 30px 10px 10px;
+    }
+}
